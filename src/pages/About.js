@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import FooterBottom from "../components/FooterBottom";
+import Navbar from "../common/Navbar";
+import FooterBottom from "../common/FooterBottom";
 import "./About.css";
 
 function About() {
