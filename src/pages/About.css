@@ -9,9 +9,13 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  height: 100%;
+   height: 100%; 
   background: black;
   width: 100%;
+}
+.aboutImage {
+  max-width: 40%; 
+  height: auto; 
 }
 
 .citeName {
@@ -35,7 +39,7 @@ p.about {
 h1 {
   font-family: "Times New Roman", Times, serif;
   font-weight: 500;
-  font-size: 70px;
+  font-size: 60px;
   color: white;
   text-align: center;
 }
