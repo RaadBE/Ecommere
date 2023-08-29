@@ -5,212 +5,6 @@
   height: 100vh;
   background: black;
 }
-/* .section-1,
-.section-1 * {
-  box-sizing: border-box;
-}
-.section-1 {
-  width: 886px;
-  height: 528px;
-  position: relative;
-  background: #404040; 
-  display: flex;
-  flex-direction: column; 
-  align-items: center; 
-  padding: 20px; 
-  border-radius: 10px;
-}
-.line-1 {
-  border-style: solid;
-  border-color: #c38e77;
-  border-width: 1px 0 0 0;
-  width: 355.01px;
-  height: 0px;
-  position: absolute;
-  left: 60px;
-  top: 103px;
-  transform-origin: 0 0;
-  transform: rotate(-0.327deg) scale(1, 1);
-}
-.line-2 {
-  border-style: solid;
-  border-color: #c38e77;
-  border-width: 1px 0 0 0;
-  width: 750px;
-  height: 0px;
-  position: absolute;
-  left: 60px;
-  top: 236px;
-  transform-origin: 0 0;
-  transform: rotate(0deg) scale(1, 1);
-}
-.line-3 {
-  border-style: solid;
-  border-color: #c38e77;
-  border-width: 1.03px 0 0 0;
-  width: 355px;
-  height: 0px;
-  position: absolute;
-  left: 460px;
-  top: 100.01px;
-  transform-origin: 0 0;
-  transform: rotate(-0.167deg) scale(1, 1);
-}
-.line-4 {
-  border-style: solid;
-  border-color: #c38e77;
-  border-width: 1px 0 0 0;
-  width: 750.02px;
-  height: 0px;
-  position: absolute;
-  left: 60px;
-  top: 366px;
-  transform-origin: 0 0;
-  transform: rotate(-0.382deg) scale(1, 1);
-}
-.your-name {
-  color: #ffffff;
-  text-align: left;
-  font: 400 19.24px "Indie Flower", cursive, sans-serif;
-  position: absolute;
-  left: 60px;
-  top: 68.61px;
-  width: 173.14px;
-  height: 30.78px;
-}
-.your-email {
-  color: #ffffff;
-  text-align: left;
-  font: 400 20px "Indie Flower", cursive, sans-serif;
-  position: absolute;
-  left: 465px;
-  top: 71px;
-  width: 145px;
-}
-.subject {
-  color: #ffffff;
-  text-align: left;
-  font: 400 20px "Indie Flower", cursive, sans-serif;
-  position: absolute;
-  left: 60px;
-  top: 206px;
-  width: 193px;
-}
-.your-message {
-  color: #ffffff;
-  text-align: left;
-  font: 400 20px "Indie Flower", cursive, sans-serif;
-  position: absolute;
-  left: 60px;
-  top: 336px;
-}
-
-.send-button {
-  color: white;
-  font: 300 23px "Indie Flower", cursive, sans-serif;
-  top: 450px;
-  width: 200px;
-  border-radius: 15px;
-  position: absolute;
-  background-color: #c38e77;
-  padding:15px;
-  
-} 
- section{
-  position: relative;
-  background: #404040; 
-  display: flex;
-  flex-direction: column; 
-  align-items: center; 
-  padding: 20px; 
-  border-radius: 10px;
-}
-.line-1 {
-  border-style: solid;
-  border-color: #c38e77;
-  border-width: 1px 0 0 0;
-  width: 355.01px;
-  height: 0px;
-  position: absolute;
-  left: 60px;
-  top: 103px;
-  transform-origin: 0 0;
-  transform: rotate(-0.327deg) scale(1, 1);
-}
-.line-2 {
-  border-style: solid;
-  border-color: #c38e77;
-  border-width: 1px 0 0 0;
-  width: 750px;
-  height: 0px;
-  position: absolute;
-  left: 60px;
-  top: 236px;
-  transform-origin: 0 0;
-  transform: rotate(0deg) scale(1, 1);
-}
-.line-3 {
-  border-style: solid;
-  border-color: #c38e77;
-  border-width: 1.03px 0 0 0;
-  width: 355px;
-  height: 0px;
-  position: absolute;
-  left: 460px;
-  top: 100.01px;
-  transform-origin: 0 0;
-  transform: rotate(-0.167deg) scale(1, 1);
-}
-.line-4 {
-  border-style: solid;
-  border-color: #c38e77;
-  border-width: 1px 0 0 0;
-  width: 750.02px;
-  height: 0px;
-  position: absolute;
-  left: 60px;
-  top: 366px;
-  transform-origin: 0 0;
-  transform: rotate(-0.382deg) scale(1, 1);
-}
-.your-name,
-.your-email,
-.subject,
-.your-message {
-  color: #ffffff;
-  text-align: left;
-  font: 400 20px "Indie Flower", cursive, sans-serif;
-  position: absolute;
-}
-.your-name {
-  left: 60px;
-  top: 68.61px;
-  width: 173.14px;
-  height: 30.78px;
-}
-.your-email {
-  left: 465px;
-  top: 71px;
-  width: 145px;
-}
-.subject {
-  left: 60px;
-  top: 206px;
-  width: 193px;
-}
-.your-message {
-  left: 60px;
-  top: 336px;
-}
-.send-button {
-  color: white;
-  font: 300 23px "Indie Flower", cursive, sans-serif;
-  top: 450px;
-  width: 200px;
-  border-radius: 15px;
-  position: absolute;
-  background-color: #c38e77;
-  padding: 15px;} */
 
 section {
   display: flex;
@@ -234,7 +28,7 @@ section {
   font-size: 36px;
   text-align: center;
   margin-bottom: 10px;
-  font-family: "Indie Flower", cursive;
+  font-family: "Times New Roman", Times, serif;
 }
 .container h2 {
   width: 100%;
@@ -242,7 +36,7 @@ section {
   font-size: 20px;
   text-align: center;
   margin-bottom: 10px;
-  font-family: "Indie Flower", cursive;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .container .row {
@@ -263,7 +57,7 @@ section {
   width: 100%;
   height: 40px;
   color: white;
-  font-family: "Indie Flower", cursive;
+  font-family: "Times New Roman", Times, serif;
 }
 .container .row .input input,
 .container .row .input textarea {
