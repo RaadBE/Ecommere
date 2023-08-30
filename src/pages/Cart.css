@@ -1,20 +1,21 @@
 body {
+  padding: 0px 30px 30px 20px;
   font-family: "Times New Roman", Times, serif;
-  margin: 0;
-  padding: 0;
-  background-color: black;
-  color: white;
   font-weight: 100;
+  color: white;
 }
-
-/* Global "table" column settings */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
 .product-image {
   float: left;
-  width: 22%;
+  width: 20%;
 }
 .product-details {
   float: left;
-  width: 25%;
+  width: 37%;
 }
 .product-price {
   float: left;
@@ -30,14 +31,8 @@ body {
 }
 .product-line-price {
   float: left;
-  width: 16%;
+  width: 12%;
   text-align: right;
-}
-
-.product .product-price:before,
-.product .product-line-price:before,
-.totals-value:before {
-  content: "€ ";
 }
 
 h1 {
@@ -46,41 +41,45 @@ h1 {
 
 label {
   color: white;
-  padding-bottom: 55px;
-  margin-bottom: 22px;
 }
 
 .shopping-cart {
-  margin-top: 4px 0 20px 0;
+  margin-top: 9px;
+}
+.product .product-price:before,
+.product .product-line-price:before,
+.totals-value:before {
+  content: "€ ";
+}
+.column-labels {
+  height: 100px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid white;
 }
 
-.product-image,
-.product-details,
-.product-removal {
-  text-indent: 80px;
-}
-
-/* Product entries */
 .product {
-  margin-bottom: 250px;
-  padding-bottom: 50px;
-  border-bottom: 1px solid;
+  height: 130px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
 }
-.product-image {
-  text-align: center;
-}
-
-img {
-  width: 60px;
+.product .product-image {
+  text-align: left;
 }
 
-.product-title {
+.product .product-image img {
+  width: 100px;
+}
+
+.product-details .product-title {
   margin-right: 20px;
   font-family: "Times New Roman", Times, serif;
+  color: white;
 }
-.product-description {
+.product-details .product-description {
   margin: 5px 20px 5px 0;
-  line-height: 1.2em;
+  line-height: 1.4em;
+  color: white;
 }
 
 .product-quantity input {
@@ -92,7 +91,7 @@ img {
   padding: 4px 8px;
   background-color: #c66;
   color: #fff;
-  font-family: "Times New Roman", Times, serif;
+  font-family: white;
   font-size: 12px;
   border-radius: 3px;
 }
@@ -101,9 +100,7 @@ img {
   background-color: #a44;
 }
 
-/* Totals section */
-
-.totals-item {
+.totals.totals-item {
   float: right;
   clear: both;
   width: 100%;
@@ -116,16 +113,15 @@ img {
   text-align: right;
 }
 
-.totals-value {
+.totals.totals-value {
   float: right;
   width: 21%;
   text-align: right;
 }
 
-.totals-item-total {
-  font-family: "Times New Roman", Times, serif;
+.totals.totals-item-total {
+  font-family: white;
 }
-
 .checkout {
   float: right;
   border: 0;
@@ -140,84 +136,3 @@ img {
 .checkout:hover {
   background-color: #c38e77;
 }
-
-/* @media screen and (max-width: 650px) {
-  .shopping-cart {
-    margin: 0;
-    padding-top: 20px;
-    border-top: 1px solid;
-  }
-
-  .column-labels {
-    display: none;
-  }
-
-  .product-image {
-    float: right;
-    width: auto;
-    img {
-      margin: 0 0 10px 10px;
-    }
-  }
-
-  .product-details {
-    float: none;
-    margin-bottom: 10px;
-    width: auto;
-  }
-
-  .product-price {
-    clear: both;
-    width: 70px;
-  }
-
-  .product-quantity {
-    width: 100px;
-    input {
-      margin-left: 20px;
-    }
-  }
-
-  .product-quantity:before {
-    content: "x";
-  }
-
-  .product-removal {
-    width: auto;
-  }
-
-  .product-line-price {
-    float: right;
-    width: 70px;
-  }
-}
-
-
-@media screen and (max-width: 350px) {
-  .product-removal {
-    float: right;
-  }
-
-  .product-line-price {
-    float: right;
-    clear: left;
-    width: auto;
-    margin-top: 10px;
-  }
-
-  .product .product-line-price:before {
-    content: "Item Total: $";
-  }
-
-  .totals {
-    .totals-item {
-      label {
-        width: 60%;
-      }
-
-      .totals-value {
-        width: 40%;
-      }
-    }
-  }
-} */
