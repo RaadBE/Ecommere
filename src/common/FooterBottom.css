@@ -1,6 +1,5 @@
 .copyright {
   box-sizing: border-box;
-  background-color: black;
   color: white;
 }
 .copyright {
@@ -9,16 +8,16 @@
   position: relative;
 }
 .copyrightSpan {
-  color: #c38e77;;
+  color: #c38e77;
   font: 400 21px "Space Grotesk", sans-serif;
 }
 .copyrightSpan2 {
-  font-family:'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   color: white;
   padding-right: 5px;
   font: 400 21px;
 }
 .copyrightSpan3 {
-  color: #c38e77;;
+  color: #c38e77;
   font: 400 21px "Space Grotesk", sans-serif;
 }

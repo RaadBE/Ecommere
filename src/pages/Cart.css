@@ -1,13 +1,14 @@
-body {
+/* body {
   padding: 0px 30px 30px 20px;
   font-family: "Times New Roman", Times, serif;
   font-weight: 100;
   color: white;
-}
-.container {
+} */
+.cartContainer {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  margin-bottom: 100px;
 }
 .product-image {
   float: left;
@@ -15,7 +16,7 @@ body {
 }
 .product-details {
   float: left;
-  width: 37%;
+  width: 20%;
 }
 .product-price {
   float: left;
@@ -23,15 +24,15 @@ body {
 }
 .product-quantity {
   float: left;
-  width: 10%;
+  width: 12%;
 }
 .product-removal {
   float: left;
-  width: 9%;
+  width: 15%;
 }
 .product-line-price {
   float: left;
-  width: 12%;
+  width: 15%;
   text-align: right;
 }
 
@@ -52,7 +53,7 @@ label {
   content: "€ ";
 }
 .column-labels {
-  height: 100px;
+  height: 70px;
   margin-bottom: 15px;
   border-bottom: 1px solid white;
 }
@@ -83,6 +84,7 @@ label {
 }
 
 .product-quantity input {
+  color:black;
   width: 40px;
 }
 

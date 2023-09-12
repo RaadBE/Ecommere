@@ -1,5 +1,5 @@
 import React from "react";
-
+import FooterBottom from "../common/FooterBottom";
 const Footer = () => {
     return (
         <>
@@ -30,11 +30,7 @@ const Footer = () => {
                     <p>Pinterest</p> 
                 </div>
             </footer>
-            <div className= 'copy' >
-                <p>
-                    COPYRIGHT © 2023  <bold style={{color: "white"}} >ASH</bold> MADEMOISELLE
-                </p> 
-            </div>
+            <FooterBottom />
         </>
     );
 };

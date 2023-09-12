@@ -1,33 +1,23 @@
-body {
-  font-family: "Times New Roman", Times, serif;
-  margin: 0;
-  padding: 0;
-}
-.contactContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: black;
-}
-
-section {
+.contactSection {
   display: flex;
   align-content: center;
   justify-content: center;
   align-items: center;
   min-height: 70vh;
+  margin-top: 30px;
   margin: auto;
-  background-color: black;
 }
-.container {
+.contactContainer {
+  display: flex;
+  flex-direction: column;
   background-color: #404040;
-  width: 50%;
+  width: 70%;
   padding: 20px;
   border-radius: 7px;
   margin-bottom: 100px;
+  margin-top: 50px;
 }
-.container h1 {
+.contactContainer h1 {
   width: 100%;
   color: white;
   font-size: 36px;
@@ -35,7 +25,7 @@ section {
   margin-bottom: 10px;
   font-family: "Times New Roman", Times, serif;
 }
-.container h2 {
+.contactContainer h2 {
   width: 100%;
   color: white;
   font-size: 20px;
@@ -44,28 +34,28 @@ section {
   font-family: "Times New Roman", Times, serif;
 }
 
-.container .row {
+.contactContainer .row {
   position: relative;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
-.container .row .col {
+.contactContainer .row .col {
   position: relative;
 
   padding: 0 40px;
   margin: 60px 0 10px;
   transition: 0.5s;
 }
-.container .row .input {
+.contactContainer .row .input {
   position: relative;
   width: 100%;
   height: 40px;
   color: white;
   font-family: "Times New Roman", Times, serif;
 }
-.container .row .input input,
-.container .row .input textarea {
+.contactContainer .row .input input,
+.contactContainer .row .input textarea {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -79,7 +69,7 @@ section {
   color: #f5f5f5;
 }
 
-.container .row .input .text {
+.contactContainer .row .input .text {
   position: absolute;
   line-height: 40px;
   font-size: 1.2rem;
@@ -90,12 +80,12 @@ section {
   pointer-events: none;
 }
 
-.container .row .input input:focus + .text,
-.container .row .input input:valid + .text {
+.contactContainer .row .input input:focus + .text,
+.contactContainer .row .input input:valid + .text {
   top: -35px;
   left: -10px;
 }
-.container .row .input .line {
+.contactContainer .row .input .line {
   position: absolute;
   bottom: 0;
   display: block;
@@ -107,31 +97,31 @@ section {
   pointer-events: none;
 }
 
-.container .row .input input:focus ~ .line,
-.container .row .input input:valid ~ .line {
+.contactContainer .row .input input:focus ~ .line,
+.contactContainer .row .input input:valid ~ .line {
   height: 100%;
 }
 
-.container .row .input .textarea {
+.contactContainer .row .input .textarea {
   position: relative;
   width: 100%;
   height: 210px;
   padding: 10px 0;
 }
 
-.container .row .input .textarea textarea {
+.row .input .textarea textarea {
   height: 100%;
   resize: none;
 }
 
-.container .row .input textarea:focus + .text,
-.container .row .input textarea:valid + .text {
+.row .input textarea:focus + .text,
+.row .input textarea:valid + .text {
   top: -35px;
   left: -10px;
 }
 
-.container .row .input textarea:focus ~ .line,
-.container .row .input textarea:valid ~ .line {
+.row .input textarea:focus ~ .line,
+.row .input textarea:valid ~ .line {
   height: 100%;
 }
 .send-button {
