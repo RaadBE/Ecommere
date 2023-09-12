@@ -36,3 +36,9 @@ a {
   font-family:'Times New Roman', Times, serif;
   font-size: 1.2rem;
 }
+
+
+.text-hover:hover + .list-conta {
+  display: block;
+  opacity: 1;
+}

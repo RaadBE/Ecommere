@@ -22,7 +22,7 @@ function Navbar() {
         <li>
           <Link to="/contact">Contact</Link>
         </li>
-        <li>
+        <li className='text-hover'>
           <Link to="/cart">Cart</Link>
         </li>
       </ul>
