@@ -1,6 +1,6 @@
 import img from '../img/55.jpg'
 import img1 from '../img/32.jpeg'
-import img2 from '../img/img.webp'
+import img2 from '../img/32.jpeg'
 import React, { useState, useEffect } from 'react';
 
 function MagicalFrame() {

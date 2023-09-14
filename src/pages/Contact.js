@@ -183,7 +183,6 @@ function Contact() {
           )}
         </div>
       </section>
-      <FooterBottom />
     </div>
   );
 }

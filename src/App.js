@@ -13,7 +13,8 @@ import ProductProvider from "./proudctpage/ProductProvider.js";
 import ProductDetail from "./proudctpage/proudctData.js";
 =======
 import ProductProvider from "./proudctpage/ProductProvider";
-import ProductDetail from "./pages/testoana.js";
+import ProductDetail from "./proudctpage/proudctData.js";
+import Fatline from "./common/fatline";
 import Minin from "./proudctpage/miniCart.js";
 import CartShow from "./proudctpage/cartShow.js";
 import Testr from "./proudctpage/test.js";
@@ -24,10 +25,9 @@ import "./common/footer.css";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Cart from "./pages/Cart";
-
+import Testoana from "./pages/testoana";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
-
   useEffect(() => {
     // Simulate an async task, e.g., data fetching
     const timer = setTimeout(() => {
@@ -39,7 +39,6 @@ function App() {
   if (isLoading) {
     return <LoaderComp />;
   }
-
   return (
     <ProductProvider>
       <Router>
@@ -52,23 +51,23 @@ function App() {
                 <>
                   <Midpart />
                   <Show />
-                  <Footer />
-                  <Minin />
                 </>
               }
             />
             <Route path="/Collection" element={<CartShow />} />
-            <Route path="/product/:id" element={<ProductDetail />} />
+            <Route path="/product/:id" element={<Testoana />} />
             {/* <Route path="/cart" element={<Minin />} /> */}
             <Route path="/test" element={<Testr />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/tes1" element={<Testoana/>} />
           </Routes>
+          <Fatline/>
+          <Footer />
         </div>
       </Router>
     </ProductProvider>
   );
 }
-
 export default App;

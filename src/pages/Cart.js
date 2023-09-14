@@ -93,7 +93,7 @@ function Cart() {
             {shippingFee.toFixed(2)}
           </div>
         </div>
-        <div className="totals-item totals-item-">
+        <div className="totals-item totals-item-total">
           <label>Grand Total</label>
           <div className="totals-value" id="cart-total">
             {total.toFixed(2)}
@@ -103,13 +103,16 @@ function Cart() {
               Checkout
             </a>
 
-            <a href="/collection" className="checkout">
+            <a
+              href="/collection"
+              className="inline-block text-sm text-gray-500 underline underline-offset-4 transition hover:text-gray-600"
+            >
               Continue shopping
             </a>
           </div>
         </div>
       </div>
-      <FooterBottom />
+      <button className="checkout">Checkout</button>
     </div>
   );
 }

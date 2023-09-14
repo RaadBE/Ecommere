@@ -1,13 +1,11 @@
-/* This assumes the loader's parent is a direct child of body, 
-   but you might need to adjust based on your exact structure */
+
    body, html {
     height: 100%;
-    margin: 0;  /* Resetting default margin */
+    margin: 0;
 }
-
 .App {
-    display: flex;  /* Turn on flexbox */
-    justify-content: center;  /* Center children horizontally */
-    align-items: center;  /* Center children vertically */
-    height: 100%;  /* Take up full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
