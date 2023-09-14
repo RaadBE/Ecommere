@@ -49,9 +49,7 @@ function Cart() {
               <div className="product-title">{product.name}</div>
               <p className="product-description">{product.description}</p>
             </div>
-            <div className="product-price">
-              {product.price.$numberDecimal} EUR
-            </div>
+            <div className="product-price">{product.price.$numberDecimal}</div>
             <div className="product-quantity">
               <input
                 type="number"
@@ -78,7 +76,6 @@ function Cart() {
               {(
                 parseFloat(product.price.$numberDecimal) * product.quantity
               ).toFixed(2)}{" "}
-              EUR
             </div>
           </div>
         ))
@@ -87,29 +84,26 @@ function Cart() {
         <div className="totals-item">
           <label>Subtotal</label>
           <div className="totals-value" id="cart-subtotal">
-            {calculateSubtotal().toFixed(2)} EUR
+            {calculateSubtotal().toFixed(2)}
           </div>
         </div>
         <div className="totals-item">
           <label>Shipping</label>
           <div className="totals-value" id="cart-shipping">
-            {shippingFee.toFixed(2)} EUR
+            {shippingFee.toFixed(2)}
           </div>
         </div>
         <div className="totals-item totals-item-">
           <label>Grand Total</label>
           <div className="totals-value" id="cart-total">
-            {total.toFixed(2)} EUR
+            {total.toFixed(2)}
           </div>
           <div className="space-y-4 text-center">
             <a href="#" className="checkout">
               Checkout
             </a>
 
-            <a
-              href="/collection"
-              className="inline-block text-sm text-gray-500 underline underline-offset-4 transition hover:text-gray-600"
-            >
+            <a href="/collection" className="checkout">
               Continue shopping
             </a>
           </div>
