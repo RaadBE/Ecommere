@@ -50,6 +50,7 @@ function DetailPage() {
             </label>
             <input
               type="text"
+              id="chest"
               name="chest"
               value={chestValue}
               onChange={(e) => setChestValue(e.target.value)}
@@ -62,6 +63,7 @@ function DetailPage() {
             </label>
             <input
               type="text"
+              id="waist"
               name="waist"
               value={waistValue}
               onChange={(e) => setWaistValue(e.target.value)}
@@ -74,6 +76,7 @@ function DetailPage() {
             </label>
             <input
               type="text"
+              id="hips"
               name="hips"
               value={hipsValue}
               onChange={(e) => setHipsValue(e.target.value)}
