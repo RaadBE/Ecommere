@@ -7,18 +7,12 @@ import Show from "./homepage/show.js";
 import Change from "./homepage/imgchange.js";
 import Footer from "./common/footer.js";
 import Proudct from "./proudctpage/product.js";
-<<<<<<< HEAD
-import ProductProvider from "./proudctpage/ProductProvider.js";
-
-import ProductDetail from "./proudctpage/proudctData.js";
-=======
 import ProductProvider from "./proudctpage/ProductProvider";
 import ProductDetail from "./proudctpage/proudctData.js";
 import Fatline from "./common/fatline";
 import Minin from "./proudctpage/miniCart.js";
 import CartShow from "./proudctpage/cartShow.js";
 import Testr from "./proudctpage/test.js";
->>>>>>> 1514d6d1561f814d96f9a2334a4d7dc0d3186929
 import "./App.css";
 import "./common/navbar.css";
 import "./common/footer.css";
@@ -61,9 +55,9 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/cart" element={<Cart />} />
-            <Route path="/tes1" element={<Testoana/>} />
+            <Route path="/tes1" element={<Testoana />} />
           </Routes>
-          <Fatline/>
+          <Fatline />
           <Footer />
         </div>
       </Router>

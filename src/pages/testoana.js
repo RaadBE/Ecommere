@@ -2,6 +2,9 @@ import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import ProductContext from "../proudctpage/ProductContext";
 import "./testoana.css";
+import img from "../img/55.jpg";
+import img1 from "../img/44.jpeg";
+import img2 from "../img/32.jpeg";
 
 function DetailPage() {
   const { selectedProduct, addToCart } = useContext(ProductContext);
@@ -11,7 +14,7 @@ function DetailPage() {
   const [hipsValue, setHipsValue] = useState("");
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const images = [selectedProduct.imageURL, selectedProduct.imageURL];
+  const images = [selectedProduct.imageURL, img, img1, img2];
 
   const nextImage = () => {
     setCurrentImageIndex((prevIndex) =>

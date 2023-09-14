@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import ProductContext from "../proudctpage/ProductContext.js";
-import FooterBottom from "../common/FooterBottom";
+// import FooterBottom from "../common/FooterBottom";
 import "./Cart.css";
 
 function Cart() {
@@ -99,7 +99,7 @@ function Cart() {
             {total.toFixed(2)}
           </div>
           <div className="space-y-4 text-center">
-            <a href="#" className="checkout">
+            <a hef="#" className="checkout">
               Checkout
             </a>
 
@@ -112,7 +112,7 @@ function Cart() {
           </div>
         </div>
       </div>
-      <button className="checkout">Checkout</button>
+      {/* <button className="checkout">Checkout</button> */}
     </div>
   );
 }
