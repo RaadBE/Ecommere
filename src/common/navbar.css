@@ -1,62 +1,59 @@
-ul{
-	list-style-type: none;
-		text-align: right;
-	padding: 0;
-	margin: 0;
-	display:inline-block;
-	 width: 96%;
-
+ul {
+  list-style-type: none;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  width: 96%;
 }
 
 li {
-	display: inline;
-	padding-right: 40px;
-
+  display: inline;
+  padding-right: 40px;
 }
 
-nav{
-	display: inline;
+nav {
+  display: inline;
 }
-.logo{
-	display: inline-block;
+.logo {
+  display: inline-block;
 }
 
 a {
-	text-decoration:none;
-	color: #ffffff;
+  text-decoration: none;
+  color: #ffffff;
 }
-.container{
-	justify-content: space-between;
-	display: flex;
-	flex-direction: row-reverse;
+.container {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row-reverse;
 }
-.text{
-	align-self: center;
-	height: 659px;
-
+.text {
+  align-self: center;
+  height: 659px;
 }
 .right img {
-	border-radius: 14px;
-	height: 659px;
-	width: 463px;
-    opacity: 1;
+  border-radius: 14px;
+  height: 659px;
+  width: 463px;
+  opacity: 1;
   transition: opacity 500ms ease-in;
 }
 
-.text p{
-	line-height: 49px;
-    font-size: 22px;
-    text-align: left;
-    width: 624px;
-        padding-top: 54px;
+.text p {
+  line-height: 49px;
+  font-size: 22px;
+  text-align: left;
+  width: 624px;
+  padding-top: 54px;
 }
 .text h1 {
-	font-family: 'Indie Flower', cursive;
-	font-size: 70px;
-	margin-top: 0;
+  font-family: "Indie Flower", cursive;
+  font-size: 70px;
+  margin-top: 0;
 }
-bold{
-	color: #C38E77;
+bold {
+  color: #c38e77;
 }
 /*.logo img{
 

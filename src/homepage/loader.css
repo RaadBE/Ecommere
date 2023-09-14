@@ -1,6 +1,6 @@
 /* This assumes the loader's parent is a direct child of body, 
    but you might need to adjust based on your exact structure */
-body, html {
+   body, html {
     height: 100%;
     margin: 0;  /* Resetting default margin */
 }

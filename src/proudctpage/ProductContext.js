@@ -1,5 +1,4 @@
-// ProductContext.js
-import React from 'react';
+import React from "react";
 
 const ProductContext = React.createContext();
 

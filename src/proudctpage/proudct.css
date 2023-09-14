@@ -1,22 +1,21 @@
 .testing img {
-	width: 399px;
-	height: 670px;
+  width: 399px;
+  height: 670px;
 }
 
-.Prodct-conatiner{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	text-align: center;
-    padding-top: 160px;
-
+.Prodct-conatiner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 160px;
 }
 
-.colc-text{
-	text-align: center;
-	padding: 90px 0 40px 0;
+.colc-text {
+  text-align: center;
+  padding: 90px 0 40px 0;
 }
 
-.img-dit{
-	border: white 1px solid;
+.img-dit {
+  border: white 1px solid;
 }

@@ -1,0 +1,202 @@
+.section-2,
+.section-2 * {
+  box-sizing: border-box;
+}
+.section-2 {
+  background: #404040;
+  max-width: 1200px;
+  position: relative;
+}
+.binarcode-1 {
+  width: 675px;
+  height: 820px;
+  position: absolute;
+  left: 127px;
+  top: 83px;
+}
+.arrow-2 {
+  position: absolute;
+  left: 697px;
+  top: 129px;
+  transform: translate(-0.02px, -10.06px);
+  overflow: visible;
+}
+.lorem-ipsum-dolor-sit-amet-consectetur {
+  color: rgba(195, 142, 119, 0.91);
+  text-align: center;
+  font: 400 38px "Poppins", sans-serif;
+  position: absolute;
+  left: 980px;
+  top: 108px;
+  width: 604px;
+  height: 70px;
+}
+._123-45 {
+  color: #ffffff;
+  text-align: center;
+  font: 400 53px "Poppins", sans-serif;
+  position: absolute;
+  left: 1528px;
+  top: 657px;
+  width: 218px;
+  height: 71px;
+}
+.rectangle-11 {
+  border-radius: 0px;
+  position: absolute;
+  left: 849px;
+  top: 492px;
+  overflow: visible;
+}
+.rectangle-10 {
+  border-radius: 0px;
+  position: absolute;
+  left: 846px;
+  top: 370px;
+  overflow: visible;
+}
+.chest {
+  color: #000000;
+  text-align: left;
+  font: 400 40px "Poppins", sans-serif;
+  position: absolute;
+  left: 859px;
+  top: 370px;
+  width: 135px;
+  height: 117px;
+}
+.measurements {
+  color: #c38e77;
+  text-align: left;
+  font: 400 40px "Poppins", sans-serif;
+  position: absolute;
+  left: 846px;
+  top: 283px;
+  width: 395px;
+  height: 57px;
+}
+.rectangle-13 {
+  border-radius: 0px;
+  position: absolute;
+  left: 846px;
+  top: 612px;
+  overflow: visible;
+}
+.hips {
+  color: #000000;
+  text-align: left;
+  font: 400 40px "Poppins", sans-serif;
+  position: absolute;
+  left: 849px;
+  top: 612px;
+  width: 102px;
+  height: 116px;
+}
+.weist {
+  color: #000000;
+  text-align: left;
+  font: 400 40px "Poppins", sans-serif;
+  position: absolute;
+  left: 859px;
+  top: 488px;
+  width: 155px;
+  height: 49px;
+}
+.rectangle-6 {
+  border-radius: 0px;
+  position: absolute;
+  left: 1517px;
+  top: 800px;
+  overflow: visible;
+}
+.add-to-cart {
+  color: #ffffff;
+  text-align: left;
+  font: 400 40px "Poppins", sans-serif;
+  position: absolute;
+  left: 1529px;
+  top: 811px;
+  width: 232px;
+  height: 53px;
+}
+.rectangle-8 {
+  opacity: 0.10000000149011612;
+  position: absolute;
+  left: 1123.09px;
+  top: 1170px;
+  overflow: visible;
+}
+.rectangle-14 {
+  opacity: 0.10000000149011612;
+  position: absolute;
+  left: 1261px;
+  top: 904px;
+  overflow: visible;
+}
+.rectangle-9 {
+  position: absolute;
+  left: 852px;
+  top: 826px;
+  overflow: visible;
+}
+._1 {
+  color: #000000;
+  text-align: left;
+  font: 400 47px "Indie Flower", sans-serif;
+  position: absolute;
+  left: 854px;
+  top: 826px;
+  width: 407px;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.copyright-2023-ash-mademoiselle {
+  text-align: center;
+  font: 400 28px "Inder", sans-serif;
+  position: absolute;
+  left: 764px;
+  top: 1684px;
+}
+.copyright-2023-ash-mademoiselle-span {
+  color: #c38e77;
+  font: 400 28px "Inder", sans-serif;
+}
+.copyright-2023-ash-mademoiselle-span2 {
+  color: #ffffff;
+  font: 400 28px "Inder", sans-serif;
+}
+.copyright-2023-ash-mademoiselle-span3 {
+  color: #c38e77;
+  font: 400 28px "Inder", sans-serif;
+}
+.arrow-1 {
+  position: absolute;
+  left: 236px;
+  top: 130px;
+  transform: translate(-88.5px, -11.05px);
+  overflow: visible;
+}
+.line-14 {
+  border-style: solid;
+  border-color: #805252;
+  border-width: 7px 0 0 0;
+  width: 1866px;
+  height: 0px;
+  position: absolute;
+  left: 58px;
+  top: 1008px;
+  transform-origin: 0 0;
+  transform: rotate(0.03deg) scale(1, 1);
+}
+.lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit-sed-do-eiusmod-tempor-incididunt-ut-labore-et-dolore-magna-aliqua-ut-enim-ad-minim-veniam-quis-nostrud-exercitation-ullamco-laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-duis-aute-irure-dolor-in-reprehenderit-in-voluptate-velit-esse-cillum-dolore-eu-fugiat-nulla-pariatur-excepteur-sint-occaecat-cupidatat-non-proident-sunt-in-culpa-qui-officia-deserunt-mollit-anim-id-est-laborum {
+  color: #ffffff;
+  text-align: left;
+  font: 400 40px "Poppins", sans-serif;
+  position: absolute;
+  left: 218px;
+  top: 1112px;
+  width: 1620px;
+  height: 454px;
+}

@@ -3,6 +3,7 @@ import React from "react";
  import FooterBottom from "../common/FooterBottom";
 import "./About.css";
 import logo from "../img/leather-image.jpg";
+
 function About() {
   const companyName = "Ash Mademoiselle";
   return (

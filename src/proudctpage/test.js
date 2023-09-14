@@ -123,7 +123,7 @@ function Minin() {
 
       <a
         href="#"
-        className="inline-block text-sm text-gray-500 underline underline-offset-4 transition hover:text-gray-600"
+        className="inline-block text-sm text-white-500  transition hover:text-gray-600"
       >
         Continue shopping
       </a>

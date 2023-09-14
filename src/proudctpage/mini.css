@@ -1,11 +1,7 @@
-
-
-.list-conta{
+.list-conta {
   display: none;
   opacity: 0;
-      position: absolute;
-    top: 42px;
-    right: 113px;
-    
+  position: absolute;
+  top: 42px;
+  right: 113px;
 }
-

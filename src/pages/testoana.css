@@ -1,0 +1,147 @@
+.section-2,
+.section-2 * {
+  box-sizing: border-box;
+}
+.section-2 {
+  background: hsl(0, 0%, 25%);
+  height: 1400px;
+  position: relative;
+}
+.imageDiv {
+  width: 520px;
+  height: 600px;
+  position: absolute;
+  left: 70px;
+  top: 70px;
+}
+.arrow {
+  position: absolute;
+  left: 490px;
+  top: 100px;
+  transform: translate(-0.02px, -10.06px);
+  overflow: visible;
+}
+.textDescription {
+  color: white;
+  text-align: center;
+  font: 400 38px "Poppins", sans-serif;
+  position: absolute;
+  left: 487px;
+  top: 108px;
+  width: 604px;
+  height: 70px;
+}
+.itemPrice {
+  color: white;
+  text-align: center;
+  font: 400 35px "Poppins", sans-serif;
+  position: absolute;
+  left: 700px;
+  top: 190px;
+  width: 218px;
+  height: 71px;
+}
+.measurements {
+  color: white;
+  text-align: left;
+  font: 400 40px "Poppins", sans-serif;
+  position: absolute;
+  left: 750px;
+  top: 283px;
+  width: 395px;
+  height: 57px;
+}
+.rectangle-10 {
+  color: black;
+  border-radius: 0px;
+  position: absolute;
+  left: 700px;
+  top: 370px;
+  overflow: visible;
+}
+.rectangle-11 {
+  color: black;
+  border-radius: 0px;
+  position: absolute;
+  left: 700px;
+  top: 492px;
+  overflow: visible;
+}
+
+.rectangle-12 {
+  border-radius: 0px;
+  position: absolute;
+  left: 700px;
+  top: 612px;
+  overflow: visible;
+}
+input {
+  color: black;
+}
+.chest {
+  color: #c38e77;
+  text-align: left;
+  font: 400 30px "Poppins", sans-serif;
+  margin-right: 20px;
+}
+.waist {
+  color: #c38e77;
+  text-align: left;
+  font: 400 30px "Poppins", sans-serif;
+  margin-right: 20px;
+}
+.hips {
+  color: #c38e77;
+  text-align: left;
+  font: 400 30px "Poppins", sans-serif;
+  margin-right: 20px;
+}
+
+.add-to-cart {
+  color: #ffffff;
+  text-align: left;
+  font: 400 40px "Poppins", sans-serif;
+  position: absolute;
+  left: 1529px;
+  top: 811px;
+  width: 232px;
+  height: 53px;
+}
+
+.quantity {
+  color: #000000;
+  text-align: left;
+  font: 400 47px "Indie Flower", sans-serif;
+  position: absolute;
+  left: 854px;
+  top: 826px;
+  width: 407px;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.line-14 {
+  border-style: solid;
+  border-color: #805252;
+  border-width: 7px 0 0 0;
+  width: 1090px;
+  height: 0px;
+  position: absolute;
+  left: 58px;
+  top: 1008px;
+  transform-origin: 0 0;
+  transform: rotate(0.03deg) scale(1, 1);
+}
+.details {
+  color: #ffffff;
+  text-align: justify;
+  font: 400 20px "Poppins", sans-serif;
+  position: absolute;
+  left: 60px;
+  right: 60px;
+  top: 1050px;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
