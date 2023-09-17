@@ -14,7 +14,7 @@ function Midpart() {
         <h1>
           ASH
           <br />
-          <h1>mademoiselle</h1>
+          <strong>mademoiselle</strong>
         </h1>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting

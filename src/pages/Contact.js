@@ -80,10 +80,9 @@ function Contact() {
 
       // Create an object containing the form data
       const formDataToSend = {
-        name: formData.name,
         email: formData.email,
         subject: formData.subject,
-        content: formData.message, // Renamed to match the backend's expected field
+        content: formData.message,
       };
 
       try {

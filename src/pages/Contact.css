@@ -7,7 +7,6 @@
   margin-top: 30px;
   margin: auto;
 }
-
 .contactContainer {
   display: flex;
   flex-direction: column;
@@ -18,7 +17,6 @@
   margin-bottom: 100px;
   margin-top: 50px;
 }
-
 .contactContainer h1 {
   width: 100%;
   color: white;
@@ -27,7 +25,6 @@
   margin-bottom: 10px;
   font-family: "Times New Roman", Times, serif;
 }
-
 .contactContainer h2 {
   width: 100%;
   color: white;
@@ -43,13 +40,11 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
-
 .contactContainer .row .col {
   position: relative;
   margin: 60px 10px;
   transition: 0.5s;
 }
-
 .contactContainer .row .input {
   position: relative;
   width: 100%;
@@ -57,7 +52,6 @@
   color: white;
   font-family: "Times New Roman", Times, serif;
 }
-
 .contactContainer .row .input input,
 .contactContainer .row .input textarea {
   position: absolute;
@@ -90,7 +84,6 @@
   top: -35px;
   left: -10px;
 }
-
 .contactContainer .row .input .line {
   position: absolute;
   bottom: 0;
@@ -130,7 +123,6 @@
 .row .input textarea:valid ~ .line {
   height: 100%;
 }
-
 .send-button {
   border: none;
   padding: 7px 35px;
@@ -140,13 +132,8 @@
   color: white;
   font-size: 18px;
   border-radius: 5px;
-  transition: background 0.3s ease, color 0.3s ease;
 }
-
-.send-button:hover {
-  background: #a96d5a;
-  color: white;
-}
+/* sectionContactMe */
 
 .text1 p {
   color: #c38e77;
@@ -156,7 +143,6 @@
   padding-top: 20px;
   margin: auto;
 }
-
 .error-message {
   color: #ff0000;
   font-size: 16px;
