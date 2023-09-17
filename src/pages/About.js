@@ -11,7 +11,7 @@ function About() {
       <div className="aboutContainer">
         <img src={logo} alt="Leather" className="aboutImage" />
         <h1>
-          Welcome to the <span className="citeName">{companyName}!</span>{" "}
+          Welcome to the <span className="citeName">{companyName}!</span>
         </h1>
         <p className="about">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -28,7 +28,7 @@ function About() {
           ante metus dictum at. Et malesuada fames ac turpis egestas. Diam ut
           venenatis tellus in metus vulputate eu. In est ante in nibh. Viverra
           accumsan in nisl nisi scelerisque eu ultrices vitae auctor. Enim
-          praesent elementum facilisis leo vel fringilla est ullamcorper eget.{" "}
+          praesent elementum facilisis leo vel fringilla est ullamcorper eget.
         </p>
         <p className="about">
           Aenean et tortor at risus viverra adipiscing at in. Elementum sagittis

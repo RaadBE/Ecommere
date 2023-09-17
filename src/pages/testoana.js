@@ -87,7 +87,7 @@ function DetailPage() {
             />
           </div>
         </div>
-        <div className="quantity">- 1 +</div>
+        {/* <div className="quantity">- 1 +</div> */}
         <div className="line-14"></div>
         <div className="details">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
