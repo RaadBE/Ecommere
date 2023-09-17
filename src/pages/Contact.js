@@ -12,7 +12,6 @@ function Contact() {
   const [responseMessage, setResponseMessage] = useState(null);
   const [errorMessages, setErrorMessages] = useState({});
 
-  // Function to handle form input changes
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -21,20 +20,16 @@ function Contact() {
     });
   };
 
-  // Function to validate email format
   const isValidEmail = (email) => {
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     return emailPattern.test(email);
   };
 
-  // Function to handle form submission (with client-side validation)
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Reset previous error and response messages
     setErrorMessages({});
 
-    // Client-side validation checks
     let isValid = true;
 
     if (!formData.name.trim()) {
@@ -76,9 +71,6 @@ function Contact() {
     }
 
     if (isValid) {
-      // If all fields are valid, you can proceed with form submission
-
-      // Create an object containing the form data
       const formDataToSend = {
         email: formData.email,
         subject: formData.subject,
@@ -98,11 +90,10 @@ function Contact() {
           }
         );
 
-        // Check if the response status is OK (200)
         if (response.ok) {
           const data = await response.json();
           setResponseMessage(data.message);
-          // Optionally, reset the form after submission
+
           setFormData({
             name: "",
             email: "",
@@ -110,7 +101,6 @@ function Contact() {
             message: "",
           });
         } else {
-          // Handle errors if the response status is not OK
           console.error("An error occurred:", response.statusText);
           setErrorMessages({
             ...errorMessages,
