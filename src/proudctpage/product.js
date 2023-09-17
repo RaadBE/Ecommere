@@ -8,16 +8,27 @@ function Prodct() {
   const [data, setData] = useState([]);
   const { setSelectedProduct } = useContext(ProductContext);
 
+  const makeCall = async () => {
+    try {
+      const response = await fetch(
+        "https://ashmademoiselle-8623d0938879.herokuapp.com/products",
+        {
+          method: "GET",
+          mode: "cors",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      const data = await response.json();
+      setData(data);
+      console.log(data);
+    } catch (e) {
+      console.log(e);
+    }
+  };
   useEffect(() => {
-    fetch(`/products`)
-      .then((response) => response.json())
-      .then((actualData) => {
-        console.log("testttt", actualData);
-        setData(actualData);
-      })
-      .catch((err) => {
-        console.log(err.message);
-      });
+    makeCall();
   }, []);
   return (
     <div>
@@ -31,7 +42,7 @@ function Prodct() {
               to={`/product/${item.reference}`}
               onClick={() => setSelectedProduct(item)}
             >
-              <img src={item.imageURL} alt="product" />
+              <img src={item.imageURL} />
 
               <p>{item.name || "nothing for the moment"}</p>
               <p>{item.price.$numberDecimal}</p>

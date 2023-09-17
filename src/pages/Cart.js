@@ -49,7 +49,9 @@ function Cart() {
               <div className="product-title">{product.name}</div>
               <p className="product-description">{product.description}</p>
             </div>
-            <div className="product-price">{product.price.$numberDecimal}</div>
+            <div className="product-price">
+              {product.price.$numberDecimal} EUR
+            </div>
             <div className="product-quantity">
               <input
                 type="number"
@@ -76,6 +78,7 @@ function Cart() {
               {(
                 parseFloat(product.price.$numberDecimal) * product.quantity
               ).toFixed(2)}{" "}
+              EUR
             </div>
           </div>
         ))
@@ -93,7 +96,7 @@ function Cart() {
             {shippingFee.toFixed(2)}
           </div>
         </div>
-        <div className="totals-item totals-item-">
+        <div className="totals-item totals-item-total">
           <label>Grand Total</label>
           <div className="totals-value" id="cart-total">
             {total.toFixed(2)}
@@ -109,7 +112,7 @@ function Cart() {
           </div>
         </div>
       </div>
-      <FooterBottom />
+      <button className="checkout">Checkout</button>
     </div>
   );
 }

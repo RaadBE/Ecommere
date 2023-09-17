@@ -12,7 +12,10 @@ body{
   padding-top: 120px;
   padding-bottom: 120px;
 }
-
+.text {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 27px;
+}
 .App {
   text-align: center;
 }
@@ -43,11 +46,3 @@ body{
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

@@ -48,7 +48,6 @@ function About() {
           pellentesque adipiscing commodo elit at.
         </p>
       </div>
-      <FooterBottom />
     </div>
   );
 }
