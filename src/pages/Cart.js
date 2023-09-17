@@ -102,7 +102,7 @@ function Cart() {
             {total.toFixed(2)}
           </div>
           <div className="space-y-4 text-center">
-            <a hef="/checkout" className="checkout">
+            <a hef="#" className="checkout">
               Checkout
             </a>
 
