@@ -42,7 +42,7 @@ function Prodct() {
               to={`/product/${item.reference}`}
               onClick={() => setSelectedProduct(item)}
             >
-              <img src={item.imageURL} />
+              <img src={item.imageURL} alt={item.name} />
 
               <p>{item.name || "nothing for the moment"}</p>
               <p>{item.price.$numberDecimal}</p>

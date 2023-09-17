@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-// import Navbar from "../common/Navbar";
-import FooterBottom from "../common/FooterBottom";
 import "./Contact.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExclamationCircle } from "@fortawesome/free-solid-svg-icons";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -14,7 +14,6 @@ function Contact() {
   const [responseMessage, setResponseMessage] = useState(null);
   const [errorMessages, setErrorMessages] = useState({});
 
-  // Function to handle form input changes
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -23,14 +22,15 @@ function Contact() {
     });
   };
 
-  // Function to handle form submission (with client-side validation)
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const isValidEmail = (email) => {
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    return emailPattern.test(email);
+  };
 
-    // Reset previous error and response messages
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     setErrorMessages({});
 
-    // Client-side validation checks
     let isValid = true;
 
     if (!formData.name.trim()) {
@@ -72,23 +72,49 @@ function Contact() {
     }
 
     if (isValid) {
-      // If all fields are valid, you can proceed with form submission
-      setResponseMessage("Message sent successfully!");
+      const formDataToSend = {
+        name: formData.name,
+        email: formData.email,
+        subject: formData.subject,
+        content: formData.message,
+      };
 
-      // Optionally, reset the form after submission
-      setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
-      });
+      try {
+        const response = await fetch(
+          "https://ashmademoiselle-8623d0938879.herokuapp.com/contact",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formDataToSend),
+          }
+        );
+
+        if (response.ok) {
+          const data = await response.json();
+          setResponseMessage(data.message);
+          setFormData({
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+          });
+        } else {
+          console.error("An error occurred:", response.statusText);
+          setErrorMessages({
+            ...errorMessages,
+            server: "An error occurred while sending the email",
+          });
+        }
+      } catch (err) {
+        console.error("An error occurred:", err);
+        setErrorMessages({
+          ...errorMessages,
+          server: "An error occurred while sending the email",
+        });
+      }
     }
-  };
-
-  // Function to validate email format
-  const isValidEmail = (email) => {
-    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-    return emailPattern.test(email);
   };
 
   return (
@@ -100,7 +126,7 @@ function Contact() {
           <form onSubmit={handleSubmit}>
             <div className="row">
               <div className="col">
-                <div className="input">
+                <div className={`input ${errorMessages.name ? "error" : ""}`}>
                   <input
                     type="text"
                     name="name"
@@ -112,12 +138,15 @@ function Contact() {
                   <span className="line"></span>
                 </div>
                 {errorMessages.name && (
-                  <div className="error-message">{errorMessages.name}</div>
+                  <div className="error-message">
+                    <FontAwesomeIcon icon={faExclamationCircle} />
+                    {errorMessages.name}
+                  </div>
                 )}
               </div>
 
               <div className="col">
-                <div className="input">
+                <div className={`input ${errorMessages.email ? "error" : ""}`}>
                   <input
                     type="email"
                     name="email"
@@ -129,32 +158,43 @@ function Contact() {
                   <span className="line"></span>
                 </div>
                 {errorMessages.email && (
-                  <div className="error-message">{errorMessages.email}</div>
+                  <div className="error-message">
+                    <FontAwesomeIcon icon={faExclamationCircle} />
+                    {errorMessages.email}
+                  </div>
                 )}
               </div>
             </div>
 
             <div className="row">
               <div className="col">
-                <div className="input">
-                  <textarea
+                <div
+                  className={`input ${errorMessages.subject ? "error" : ""}`}
+                >
+                  <input
+                    type="text"
                     name="subject"
                     value={formData.subject}
                     onChange={handleInputChange}
                     required
-                  ></textarea>
+                  />
                   <span className="text">Subject</span>
                   <span className="line"></span>
                 </div>
                 {errorMessages.subject && (
-                  <div className="error-message">{errorMessages.subject}</div>
+                  <div className="error-message">
+                    <FontAwesomeIcon icon={faExclamationCircle} />
+                    {errorMessages.subject}
+                  </div>
                 )}
               </div>
             </div>
 
             <div className="row">
               <div className="col">
-                <div className="input">
+                <div
+                  className={`input ${errorMessages.message ? "error" : ""}`}
+                >
                   <textarea
                     name="message"
                     value={formData.message}
@@ -165,7 +205,10 @@ function Contact() {
                   <span className="line"></span>
                 </div>
                 {errorMessages.message && (
-                  <div className="error-message">{errorMessages.message}</div>
+                  <div className="error-message">
+                    <FontAwesomeIcon icon={faExclamationCircle} />
+                    {errorMessages.message}
+                  </div>
                 )}
               </div>
             </div>
@@ -180,6 +223,9 @@ function Contact() {
           </form>
           {responseMessage && (
             <div className="success-message">{responseMessage}</div>
+          )}
+          {errorMessages.server && (
+            <div className="error-message">{errorMessages.server}</div>
           )}
         </div>
       </section>

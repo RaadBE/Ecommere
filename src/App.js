@@ -48,16 +48,16 @@ function App() {
                 </>
               }
             />
-            <Route path="/Collection" element={<CartShow />} />
+            <Route path="/collection" element={<CartShow />} />
             <Route path="/product/:id" element={<Testoana />} />
             {/* <Route path="/cart" element={<Minin />} /> */}
             <Route path="/test" element={<Testr />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/cart" element={<Cart />} />
-            <Route path="/tes1" element={<Testoana/>} />
+            <Route path="/tes1" element={<Testoana />} />
           </Routes>
-          <Fatline/>
+          <Fatline />
           <Footer />
         </div>
       </Router>

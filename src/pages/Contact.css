@@ -7,6 +7,7 @@
   margin-top: 30px;
   margin: auto;
 }
+
 .contactContainer {
   display: flex;
   flex-direction: column;
@@ -17,6 +18,7 @@
   margin-bottom: 100px;
   margin-top: 50px;
 }
+
 .contactContainer h1 {
   width: 100%;
   color: white;
@@ -25,6 +27,7 @@
   margin-bottom: 10px;
   font-family: "Times New Roman", Times, serif;
 }
+
 .contactContainer h2 {
   width: 100%;
   color: white;
@@ -40,11 +43,13 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
+
 .contactContainer .row .col {
   position: relative;
   margin: 60px 10px;
   transition: 0.5s;
 }
+
 .contactContainer .row .input {
   position: relative;
   width: 100%;
@@ -52,6 +57,7 @@
   color: white;
   font-family: "Times New Roman", Times, serif;
 }
+
 .contactContainer .row .input input,
 .contactContainer .row .input textarea {
   position: absolute;
@@ -84,6 +90,7 @@
   top: -35px;
   left: -10px;
 }
+
 .contactContainer .row .input .line {
   position: absolute;
   bottom: 0;
@@ -123,6 +130,7 @@
 .row .input textarea:valid ~ .line {
   height: 100%;
 }
+
 .send-button {
   border: none;
   padding: 7px 35px;
@@ -132,8 +140,14 @@
   color: white;
   font-size: 18px;
   border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease; /* Add smooth transitions */
 }
-/* sectionContactMe */
+
+/* Hover effect for the send button */
+.send-button:hover {
+  background: #a96d5a;
+  color: white;
+}
 
 .text1 p {
   color: #c38e77;
@@ -142,4 +156,35 @@
   margin-top: 20px;
   padding-top: 20px;
   margin: auto;
+}
+
+.error-message {
+  color: #ff0000;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center align the icon and text */
+}
+
+.success-message {
+  color: #00cc00;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center align the icon and text */
+}
+
+/* Style the FontAwesome icons within error messages */
+.error-message .svg-inline--fa {
+  margin-right: 5px; /* Add spacing between icon and text */
+  color: #ff0000; /* Set the icon color */
+}
+
+.success-message .svg-inline--fa {
+  margin-right: 5px; /* Add spacing between icon and text */
+  color: #00cc00; /* Set the icon color */
 }

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import ProductContext from "./ProductContext";
 // import Minin from './miniCart.js'
 import Proudct from "./product.js";
