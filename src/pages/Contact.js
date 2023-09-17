@@ -27,7 +27,7 @@ function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    console.log("Form submitted");
     setErrorMessages({});
 
     let isValid = true;
@@ -95,10 +95,10 @@ function Contact() {
           setResponseMessage(data.message);
 
           setFormData({
-            name: "",
+            // name: "",
             email: "",
             subject: "",
-            message: "",
+            content: "",
           });
         } else {
           console.error("An error occurred:", response.statusText);

@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import ProductContext from "../proudctpage/ProductContext.js";
 // import FooterBottom from "../common/FooterBottom";
 import "./Cart.css";
-
 function Cart() {
   const { cart, removeFromCart, updateQuantity } = useContext(ProductContext);
 
@@ -53,7 +52,7 @@ function Cart() {
             <div className="product-quantity">
               <input
                 type="number"
-                value={product.quantity}
+                value={product.quantity || 1}
                 onChange={(e) =>
                   handleQuantityChange(
                     product._id,
@@ -73,9 +72,11 @@ function Cart() {
               </button>
             </div>
             <div className="product-line-price">
-              {(
-                parseFloat(product.price.$numberDecimal) * product.quantity
-              ).toFixed(2)}{" "}
+              {product.price.$numberDecimal
+                ? (
+                    parseFloat(product.price.$numberDecimal) * product.quantity
+                  ).toFixed(2)
+                : product.price.$numberDecimal}
             </div>
           </div>
         ))
@@ -99,10 +100,11 @@ function Cart() {
             {total.toFixed(2)}
           </div>
           <div className="space-y-4 text-center">
-            <a hef="#" className="checkout">
+            <a href="/checkout" className="checkout">
               Checkout
             </a>
-
+          </div>
+          <div>
             <a
               href="/collection"
               className="inline-block text-sm text-gray-500 underline underline-offset-4 transition hover:text-gray-600"
