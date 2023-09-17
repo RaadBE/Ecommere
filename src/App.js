@@ -48,7 +48,7 @@ function App() {
                 </>
               }
             />
-            <Route path="/Collection" element={<CartShow />} />
+            <Route path="/collection" element={<CartShow />} />
             <Route path="/product/:id" element={<Testoana />} />
             {/* <Route path="/cart" element={<Minin />} /> */}
             <Route path="/test" element={<Testr />} />

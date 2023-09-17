@@ -5,9 +5,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-
     <nav className="navbar">
-
       <div className="logo">
         <img src={logo} alt="Logo" />
       </div>
@@ -24,7 +22,7 @@ function Navbar() {
         <li>
           <Link to="/contact">Contact</Link>
         </li>
-        <li className='text-hover'>
+        <li className="text-hover">
           <Link to="/cart">Cart</Link>
         </li>
       </ul>

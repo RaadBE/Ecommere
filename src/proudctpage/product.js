@@ -11,7 +11,7 @@ function Prodct() {
   const makeCall = async () => {
     try {
       const response = await fetch(
-        "https://ashmademoiselle-8623d0938879.herokuapp.com/",
+        "https://ashmademoiselle-8623d0938879.herokuapp.com/products",
         {
           method: "GET",
           mode: "cors",
@@ -32,7 +32,7 @@ function Prodct() {
   }, []);
   return (
     <div>
-      <div className="colc-text text-3xl font-bold underline">
+      <div className="colc-text text-3xl">
         <h1>COLLECTION</h1>
       </div>
       <div className="Prodct-conatiner">
