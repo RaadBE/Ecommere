@@ -1,14 +1,14 @@
-import {useState, useEffect, useContext} from "react";
+import { useState, useEffect, useContext } from "react";
 import "./show.css";
-import jacket1 from '../img/jacket1.webp'
-import jacket2 from '../img/jacket2.webp'
-import jacket3 from '../img/jacket3.webp'
-import jacket4 from '../img/jacket4.jpg'
-import jacket5 from '../img/32.jpeg'
+import jacket1 from "../img/jacket1.webp";
+import jacket2 from "../img/jacket2.webp";
+import jacket3 from "../img/jacket3.webp";
+import jacket4 from "../img/jacket4.jpg";
+import jacket5 from "../img/32.jpeg";
 import ProductContext from "../proudctpage/ProductContext";
 function Show() {
-    // const [imageURL, setImageURL] = useState([]);
-    const { selectedProduct } = useContext(ProductContext);
+  // const [imageURL, setImageURL] = useState([]);
+  const { selectedProduct } = useContext(ProductContext);
 
   return (
     <div className="imgs-conta">

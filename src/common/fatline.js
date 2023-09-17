@@ -1,5 +1,5 @@
 import React from "react";
-import FooterBottom from "../common/FooterBottom";
+// import FooterBottom from "../common/FooterBottom";
 const FatLine = () => {
     const ColoredLine = ({ color }) => (
         <hr

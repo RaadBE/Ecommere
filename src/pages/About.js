@@ -1,6 +1,6 @@
 import React from "react";
 // import Navbar from "../common/Navbar";
- import FooterBottom from "../common/FooterBottom";
+//  import FooterBottom from "../common/FooterBottom";
 import "./About.css";
 import logo from "../img/leather-image.jpg";
 
@@ -8,7 +8,6 @@ function About() {
   const companyName = "Ash Mademoiselle";
   return (
     <div>
-  
       <div className="aboutContainer">
         <img src={logo} alt="Leather" className="aboutImage" />
         <h1>
