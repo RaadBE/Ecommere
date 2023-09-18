@@ -90,15 +90,7 @@ function DetailPage() {
         {/* <div className="quantity">- 1 +</div> */}
         <div className="line-14"></div>
         <div className="details">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-          blandit turpis cursus in. Justo donec enim diam vulputate. Rutrum
-          quisque non tellus orci ac auctor augue mauris. Mus mauris vitae
-          ultricies leo integer malesuada. Molestie ac feugiat sed lectus
-          vestibulum mattis ullamcorper velit. Orci nulla pellentesque dignissim
-          enim sit amet venenatis urna. Ullamcorper morbi tincidunt ornare massa
-          eget egestas. Duis at consectetur lorem donec massa sapien faucibus
-          et. Scelerisque eu ultrices vitae auctor eu augue ut.
+          <p>{selectedProduct.description}</p>
           <button
             onClick={() => addToCart(selectedProduct)}
             className="checkout"

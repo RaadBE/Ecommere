@@ -80,22 +80,22 @@ function Contact() {
       try {
         // Make a POST request to the backend API
         const response = await fetch(
-          "https://ashmademoiselle-8623d0938879.herokuapp.com/contact",
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(formDataToSend),
-          }
+            "https://ashmademoiselle-8623d0938879.herokuapp.com/contact",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(formDataToSend),
+            }
         );
 
         if (response.ok) {
           const data = await response.json();
           setResponseMessage(data.message);
-
+          console.log(data);
           setFormData({
-            // name: "",
+            name: "",
             email: "",
             subject: "",
             content: "",
@@ -118,102 +118,102 @@ function Contact() {
   };
 
   return (
-    <div>
-      <section className="contactSection">
-        <div className="contactContainer">
-          <h1>Get in Touch</h1>
-          <h2>Send me a message using this form!</h2>
-          <form onSubmit={handleSubmit}>
-            <div className="row">
-              <div className="col">
-                <div className="input">
-                  <input
-                    type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    required
-                  />
-                  <span className="text">Name</span>
-                  <span className="line"></span>
+      <div>
+        <section className="contactSection">
+          <div className="contactContainer">
+            <h1>Get in Touch</h1>
+            <h2>Send me a message using this form!</h2>
+            <form onSubmit={handleSubmit}>
+              <div className="row">
+                <div className="col">
+                  <div className="input">
+                    <input
+                        type="text"
+                        name="name" // Add name attribute
+                        value={formData.name}
+                        onChange={handleInputChange}
+                        required
+                    />
+                    <span className="text">Name</span>
+                    <span className="line"></span>
+                  </div>
+                  {errorMessages.name && (
+                      <div className="error-message">{errorMessages.name}</div>
+                  )}
                 </div>
-                {errorMessages.name && (
-                  <div className="error-message">{errorMessages.name}</div>
-                )}
+
+                <div className="col">
+                  <div className="input">
+                    <input
+                        type="email"
+                        name="email" // Add name attribute
+                        value={formData.email}
+                        onChange={handleInputChange}
+                        required
+                    />
+                    <span className="text">Email</span>
+                    <span className="line"></span>
+                  </div>
+                  {errorMessages.email && (
+                      <div className="error-message">{errorMessages.email}</div>
+                  )}
+                </div>
               </div>
 
-              <div className="col">
-                <div className="input">
-                  <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    required
-                  />
-                  <span className="text">Email</span>
-                  <span className="line"></span>
+              <div className="row">
+                <div className="col">
+                  <div className="input">
+                    <input
+                        type="text"
+                        name="subject" // Add name attribute
+                        value={formData.subject}
+                        onChange={handleInputChange}
+                        required
+                    />
+                    <span className="text">Subject</span>
+                    <span className="line"></span>
+                  </div>
+                  {errorMessages.subject && (
+                      <div className="error-message">{errorMessages.subject}</div>
+                  )}
                 </div>
-                {errorMessages.email && (
-                  <div className="error-message">{errorMessages.email}</div>
-                )}
               </div>
-            </div>
 
-            <div className="row">
-              <div className="col">
-                <div className="input">
-                  <input
-                    type="text"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleInputChange}
-                    required
-                  />
-                  <span className="text">Subject</span>
-                  <span className="line"></span>
-                </div>
-                {errorMessages.subject && (
-                  <div className="error-message">{errorMessages.subject}</div>
-                )}
-              </div>
-            </div>
-
-            <div className="row">
-              <div className="col">
-                <div className="input">
+              <div className="row">
+                <div className="col">
+                  <div className="input">
                   <textarea
-                    name="message"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    required
+                      name="message"
+                      value={formData.message}
+                      onChange={handleInputChange}
+                      required
                   ></textarea>
-                  <span className="text">Your Message</span>
-                  <span className="line"></span>
+                    <span className="text">Your Message</span>
+                    <span className="line"></span>
+                  </div>
+                  {errorMessages.message && (
+                      <div className="error-message">{errorMessages.message}</div>
+                  )}
                 </div>
-                {errorMessages.message && (
-                  <div className="error-message">{errorMessages.message}</div>
-                )}
               </div>
-            </div>
 
-            <div className="row">
-              <div className="col">
-                <button className="send-button" type="submit" value="Send">
-                  SEND
-                </button>
+              <div className="row">
+                <div className="col">
+                  <button className="send-button" type="submit" value="Send">
+                    SEND
+                  </button>
+                </div>
               </div>
-            </div>
-          </form>
-          {responseMessage && (
-            <div className="success-message">{responseMessage}</div>
-          )}
-          {errorMessages.server && (
-            <div className="error-message">{errorMessages.server}</div>
-          )}
-        </div>
-      </section>
-    </div>
+            </form>
+            {responseMessage && (
+                <div className="success-message">{responseMessage}</div>
+            )}
+            {errorMessages.server && (
+                <div className="error-message">{errorMessages.server}</div>
+            )}
+          </div>
+        </section>
+      </div>
   );
 }
 

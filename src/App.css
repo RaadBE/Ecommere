@@ -13,8 +13,12 @@ body{
   padding-bottom: 120px;
 }
 .text {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 27px;
+  font-family: 'Indie Flower', cursive;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Public Sans', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 23px;
+
 }
 .App {
   text-align: center;

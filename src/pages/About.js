@@ -1,6 +1,5 @@
 import React from "react";
 // import Navbar from "../common/Navbar";
-//  import FooterBottom from "../common/FooterBottom";
 import "./About.css";
 import logo from "../img/leather-image.jpg";
 

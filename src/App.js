@@ -1,53 +1,76 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Navbar from "./common/Navbar.js";
 import Midpart from "./homepage/midpart.js";
 import LoaderComp from "./homepage/loader";
 import Show from "./homepage/show.js";
-import Change from "./homepage/imgchange.js";
 import Footer from "./common/footer.js";
-import Proudct from "./proudctpage/product.js";
 import ProductProvider from "./proudctpage/ProductProvider";
-import ProductDetail from "./proudctpage/proudctData.js";
 import Fatline from "./common/fatline";
-import Minin from "./proudctpage/miniCart.js";
 import CartShow from "./proudctpage/cartShow.js";
 import Testr from "./proudctpage/test.js";
-import "./App.css";
-import "./common/navbar.css";
-import "./common/footer.css";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Cart from "./pages/Cart";
 import Testoana from "./pages/testoana";
-import PaymentSuccess from "./pages/PaymentSuccess.js";
+import  Login from './admin/login'
+import AdminRoutes from './admin/routes';
+import AdminLayout from './admin/AdminLayout';
+import "./App.css";
+import "./common/navbar.css";
+import "./common/footer.css";
+import 'bootstrap/dist/css/bootstrap.css';
+import PrivateRoute from "./admin/PrivateRoute";
+import PhoneNav from "./common/mobileNav";
+import './common/phones.css'
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
-    // Simulate an async task, e.g., data fetching
     const timer = setTimeout(() => {
-      setIsLoading(false); // Hide loader after 3 seconds
+      setIsLoading(false);
     }, 3000);
-    return () => clearTimeout(timer); // Cleanup the timer if the component is unmounted
+    return () => clearTimeout(timer);
   }, []);
 
   if (isLoading) {
     return <LoaderComp />;
   }
+
   return (
-    <ProductProvider>
-      <Router>
-        <div className="App">
-          <Navbar />
-          <Routes>
-            <Route
-              path="/"
-              element={
+      <ProductProvider>
+        <Router>
+          <div className="App">
+            <PhoneNav/>
+
+            <Navbar />
+            <Routes>
+              <Route path="/" element={
                 <>
                   <Midpart />
                   <Show />
                 </>
+              } />
+              <Route path="/Collection" element={<CartShow />} />
+              <Route path="/product/:id" element={<Testoana />} />
+              <Route path="/test" element={<Testr />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/tes1" element={<Testoana/>} />
+              <Route path="/admin/*" element={<PrivateRoute />}>
+              </Route>
+              <Route path="/login" element={<Login />} />
+              </Routes>
+                <Fatline/>
+            <Footer />
+                </div>
+                </Router>
+                </ProductProvider>
+                );
               }
+<<<<<<< HEAD
             />
             <Route path="/collection" element={<CartShow />} />
             <Route path="/product/:id" element={<Testoana />} />
@@ -66,4 +89,7 @@ function App() {
     </ProductProvider>
   );
 }
+=======
+
+>>>>>>> 843bbf6f1c5a8181737e9bab42109b0cbb71845d
 export default App;

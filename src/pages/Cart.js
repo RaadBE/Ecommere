@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import ProductContext from "../proudctpage/ProductContext.js";
-// import FooterBottom from "../common/FooterBottom";
 import "./Cart.css";
 function Cart() {
   const { cart, removeFromCart, updateQuantity } = useContext(ProductContext);
