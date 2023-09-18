@@ -70,26 +70,4 @@ function App() {
                 </ProductProvider>
                 );
               }
-<<<<<<< HEAD
-            />
-            <Route path="/collection" element={<CartShow />} />
-            <Route path="/product/:id" element={<Testoana />} />
-            {/* <Route path="/cart" element={<Minin />} /> */}
-            <Route path="/test" element={<Testr />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/checkout" element={<PaymentSuccess />} />
-            <Route path="/tes1" element={<Testoana />} />
-          </Routes>
-          <Fatline />
-          <Footer />
-        </div>
-      </Router>
-    </ProductProvider>
-  );
-}
-=======
-
->>>>>>> 843bbf6f1c5a8181737e9bab42109b0cbb71845d
 export default App;
